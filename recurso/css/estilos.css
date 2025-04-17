@@ -1,0 +1,124 @@
+   
+   .seccion1{ /* es una clase que puede invocarse varias veces en la pag*/
+     border: 10px;
+     margin: 10px;
+     width: 28%;
+     float: left;
+     background-color: lightgrey;
+   }
+
+   .header1{
+      background-color: rgba(0, 0, 0, 0.6);
+      width: 100%;
+      position: relative;
+      margin-top: 10px;
+      display: flex; /* las opciones esten orientadas horizontalmente*/
+      z-index:100;
+   }
+   ul{
+    list-style-type: none; /*sin vineta*/
+    display: flex;  
+    float: left ; /* las opciones se orientan a la izquierda*/
+   }
+   li{
+    font-size: 18px;
+    margin-right: 20px;
+   }
+   a{  /*vinculo de pagina*/
+     text-decoration: none; /*quitar el subrayado */
+     color:white;
+   }
+   a:hover{
+    color:blue; /*cada vez que se enfoca la opcion poner color azul*/
+   }
+
+   .grid{
+		width: 	70%;
+		border:2px solid black;
+		box-shadow: 8px 8px 8px black;
+		padding: 15px;
+	}
+   /*cabecera de la tabla */
+   .grid th{
+     background: black;
+     color:white;
+     font-size: 1.2em;
+     padding: 10px;
+   }
+   /* filas pares con color gris*/
+    .grid tr:nth-child(even){
+    	background: #CDD1CD ;
+    }
+
+   /* filas impares con color verde claro */
+   .grid tr:nth-child(odd){
+   	   background: 	#81F7D8 ;
+   }
+
+   .grid td{
+   	 padding: 10px;
+   	 font-size:1.2em;
+   }
+   
+   img{
+   transition: transform 1s;
+    
+}
+img:hover{
+     transform: scale(1.5);
+}
+
+
+body{
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+
+ 	}
+
+ 	/* el div va tener un id -identificador */
+         	/* el div va tener un id -identificador */
+ header{
+     background-color: #4CAF50;
+     color: white;
+     text-align: center;
+     padding: 10px 0;
+ 	}
+        
+    
+    main{ /*contenido principal*/
+      background-color: #f4f4f4;
+      padding: 15px;
+
+    }
+         
+   footer{
+     position:fixed;
+     bottom: 0;
+     background-color: #333;
+     color: white;
+     text-align: center;
+     width: 100%;
+     padding: 10px 0;
+    }
+    
+    
+
+.rojo{
+    color: red;
+    font-style: italic;
+}
+.azul{
+    color: blue;
+    font-weight: bold;
+}
+img{
+   transition: transform 1s;
+    
+}
+img:hover{
+     transform: scale(1.5);
+}
+.bg-custom-purple{
+    background: #8540f5;
+}
