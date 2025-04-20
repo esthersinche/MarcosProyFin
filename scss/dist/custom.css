@@ -1,4 +1,39 @@
 @charset "UTF-8";
+.btn-apple {
+  color: white;
+  background-color: #A3C9A8;
+}
+
+.btn-ocean {
+  color: white;
+  background-color: #50808E;
+}
+
+.btn-aquamarine {
+  color: white;
+  background-color: #84B59F;
+}
+
+.text-apple {
+  color: #A3C9A8;
+}
+
+.text-ocean {
+  color: #50808E;
+}
+
+.text-aquamarine {
+  color: #84B59F;
+}
+
+.text-header {
+  color: #69A297;
+}
+
+.text-main {
+  color: #DDD8C4;
+}
+
 :root,
 [data-bs-theme=light] {
   --bs-blue: #0d6efd;
@@ -34,6 +69,9 @@
   --bs-dark: #212529;
   --bs-main: #DDD8C4;
   --bs-header: #69A297;
+  --bs-ocean: #50808E;
+  --bs-apple: #A3C9A8;
+  --bs-aquamarine: #84B59F;
   --bs-primary-rgb: 13, 110, 253;
   --bs-secondary-rgb: 108, 117, 125;
   --bs-success-rgb: 25, 135, 84;
@@ -44,6 +82,9 @@
   --bs-dark-rgb: 33, 37, 41;
   --bs-main-rgb: 221, 216, 196;
   --bs-header-rgb: 105, 162, 151;
+  --bs-ocean-rgb: 80, 128, 142;
+  --bs-apple-rgb: 163, 201, 168;
+  --bs-aquamarine-rgb: 132, 181, 159;
   --bs-primary-text-emphasis: #052c65;
   --bs-secondary-text-emphasis: #2b2f32;
   --bs-success-text-emphasis: #0a3622;
@@ -2123,6 +2164,21 @@ progress {
   background-color: RGBA(var(--bs-header-rgb), var(--bs-bg-opacity, 1)) !important;
 }
 
+.text-bg-ocean {
+  color: #000 !important;
+  background-color: RGBA(var(--bs-ocean-rgb), var(--bs-bg-opacity, 1)) !important;
+}
+
+.text-bg-apple {
+  color: #000 !important;
+  background-color: RGBA(var(--bs-apple-rgb), var(--bs-bg-opacity, 1)) !important;
+}
+
+.text-bg-aquamarine {
+  color: #000 !important;
+  background-color: RGBA(var(--bs-aquamarine-rgb), var(--bs-bg-opacity, 1)) !important;
+}
+
 .link-primary {
   color: RGBA(var(--bs-primary-rgb), var(--bs-link-opacity, 1)) !important;
   text-decoration-color: RGBA(var(--bs-primary-rgb), var(--bs-link-underline-opacity, 1)) !important;
@@ -2211,6 +2267,33 @@ progress {
 .link-header:hover, .link-header:focus {
   color: RGBA(135, 181, 172, var(--bs-link-opacity, 1)) !important;
   text-decoration-color: RGBA(135, 181, 172, var(--bs-link-underline-opacity, 1)) !important;
+}
+
+.link-ocean {
+  color: RGBA(var(--bs-ocean-rgb), var(--bs-link-opacity, 1)) !important;
+  text-decoration-color: RGBA(var(--bs-ocean-rgb), var(--bs-link-underline-opacity, 1)) !important;
+}
+.link-ocean:hover, .link-ocean:focus {
+  color: RGBA(115, 153, 165, var(--bs-link-opacity, 1)) !important;
+  text-decoration-color: RGBA(115, 153, 165, var(--bs-link-underline-opacity, 1)) !important;
+}
+
+.link-apple {
+  color: RGBA(var(--bs-apple-rgb), var(--bs-link-opacity, 1)) !important;
+  text-decoration-color: RGBA(var(--bs-apple-rgb), var(--bs-link-underline-opacity, 1)) !important;
+}
+.link-apple:hover, .link-apple:focus {
+  color: RGBA(181, 212, 185, var(--bs-link-opacity, 1)) !important;
+  text-decoration-color: RGBA(181, 212, 185, var(--bs-link-underline-opacity, 1)) !important;
+}
+
+.link-aquamarine {
+  color: RGBA(var(--bs-aquamarine-rgb), var(--bs-link-opacity, 1)) !important;
+  text-decoration-color: RGBA(var(--bs-aquamarine-rgb), var(--bs-link-underline-opacity, 1)) !important;
+}
+.link-aquamarine:hover, .link-aquamarine:focus {
+  color: RGBA(157, 196, 178, var(--bs-link-opacity, 1)) !important;
+  text-decoration-color: RGBA(157, 196, 178, var(--bs-link-underline-opacity, 1)) !important;
 }
 
 .link-body-emphasis {
@@ -2657,6 +2740,18 @@ progress {
   --bs-focus-ring-color: rgba(var(--bs-header-rgb), var(--bs-focus-ring-opacity));
 }
 
+.focus-ring-ocean {
+  --bs-focus-ring-color: rgba(var(--bs-ocean-rgb), var(--bs-focus-ring-opacity));
+}
+
+.focus-ring-apple {
+  --bs-focus-ring-color: rgba(var(--bs-apple-rgb), var(--bs-focus-ring-opacity));
+}
+
+.focus-ring-aquamarine {
+  --bs-focus-ring-color: rgba(var(--bs-aquamarine-rgb), var(--bs-focus-ring-opacity));
+}
+
 .position-static {
   position: static !important;
 }
@@ -2825,6 +2920,21 @@ progress {
 .border-header {
   --bs-border-opacity: 1;
   border-color: rgba(var(--bs-header-rgb), var(--bs-border-opacity)) !important;
+}
+
+.border-ocean {
+  --bs-border-opacity: 1;
+  border-color: rgba(var(--bs-ocean-rgb), var(--bs-border-opacity)) !important;
+}
+
+.border-apple {
+  --bs-border-opacity: 1;
+  border-color: rgba(var(--bs-apple-rgb), var(--bs-border-opacity)) !important;
+}
+
+.border-aquamarine {
+  --bs-border-opacity: 1;
+  border-color: rgba(var(--bs-aquamarine-rgb), var(--bs-border-opacity)) !important;
 }
 
 .border-black {
@@ -3788,6 +3898,21 @@ progress {
   color: rgba(var(--bs-header-rgb), var(--bs-text-opacity)) !important;
 }
 
+.text-ocean {
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-ocean-rgb), var(--bs-text-opacity)) !important;
+}
+
+.text-apple {
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-apple-rgb), var(--bs-text-opacity)) !important;
+}
+
+.text-aquamarine {
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-aquamarine-rgb), var(--bs-text-opacity)) !important;
+}
+
 .text-black {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-black-rgb), var(--bs-text-opacity)) !important;
@@ -4000,6 +4125,21 @@ progress {
   text-decoration-color: rgba(var(--bs-header-rgb), var(--bs-link-underline-opacity)) !important;
 }
 
+.link-underline-ocean {
+  --bs-link-underline-opacity: 1;
+  text-decoration-color: rgba(var(--bs-ocean-rgb), var(--bs-link-underline-opacity)) !important;
+}
+
+.link-underline-apple {
+  --bs-link-underline-opacity: 1;
+  text-decoration-color: rgba(var(--bs-apple-rgb), var(--bs-link-underline-opacity)) !important;
+}
+
+.link-underline-aquamarine {
+  --bs-link-underline-opacity: 1;
+  text-decoration-color: rgba(var(--bs-aquamarine-rgb), var(--bs-link-underline-opacity)) !important;
+}
+
 .link-underline {
   --bs-link-underline-opacity: 1;
   text-decoration-color: rgba(var(--bs-link-color-rgb), var(--bs-link-underline-opacity, 1)) !important;
@@ -4101,6 +4241,21 @@ progress {
 .bg-header {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-header-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.bg-ocean {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-ocean-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.bg-apple {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-apple-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.bg-aquamarine {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-aquamarine-rgb), var(--bs-bg-opacity)) !important;
 }
 
 .bg-black {

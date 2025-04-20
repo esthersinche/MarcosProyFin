@@ -5,8 +5,52 @@
 @import "../node_modules/bootstrap/scss/_variables.scss";
 
 // 2. Sobrescribe variables antes de importar Bootstrap
-$custom-colors: ("main": #DDD8C4,
-    "header": #69A297);
+$main: #DDD8C4;
+$header: #69A297;
+$ocean: #50808E;
+$apple: #A3C9A8;
+$aquamarine: #84B59F;
+
+$custom-colors: ("main": $main,
+    "header": $header,
+    "ocean": $ocean,
+    "apple": $apple,
+    "aquamarine": $aquamarine);
+
+.btn-apple {
+    color: white;
+    background-color: $apple;
+}
+
+.btn-ocean {
+    color: white;
+    background-color: $ocean;
+}
+
+.btn-aquamarine {
+    color: white;
+    background-color:$aquamarine;
+}
+
+.text-apple {
+    color: $apple;
+}
+
+.text-ocean {
+    color: $ocean;
+}
+
+.text-aquamarine {
+    color: $aquamarine;
+}
+
+.text-header {
+    color: $header;
+}
+
+.text-main {
+    color: $main;
+}
 
 // 3. Combina con los colores de Bootstrap
 $theme-colors: map-merge($theme-colors, $custom-colors);
