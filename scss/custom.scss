@@ -41,10 +41,7 @@
 // 8. Add additional custom code here
 
 // Create your own map
-$custom-colors: (
-    "main": #DDD8C4
-    "header": #69A297
-);
+$custom-colors: ("main": #DDD8C4 "header": #69A297);
 
 // Merge the maps
 $theme-colors: map-merge($theme-colors, $custom-colors);
