@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paquetes</title>
+    <link rel="stylesheet" href="scss/dist/custom.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+</head>
+<body class="bg-white">
+    <!--Header-->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-header">
+            <div class="container-fluid">
+                <a class="navbar-brand text-white" href="main.html">TuCrucerito.com</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toogle-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" 
+                    style="--bs-scroll-height: 100px">
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page"
+                            href="rutas.html">Destinos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page"
+                            href="paquetes.html">Paquetes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" 
+                            href="barcos.html">Barcos</a>
+
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page"
+                            href="puertos.html">Puertos</a>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--body-->
+    <main class="py-4">
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0"
+                class="active" aria-label="Slide1"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"
+                aria-label="Slide2"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"
+                aria-label="Slide3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1950&q=80"
+                    class="d-block w-100" alt="Crucero al atardecer">
+                    <div class="container">
+                        <div class="carousel-caption bg-dark bg-opacity-75">
+                            <h1>Tu aventura comienza aquí.</h1>
+                            <p>Surca los mares con estilo y comodidad en nuestros exclusivos cruceros por el Caribe.</p>
+                            <p><a class="btn btn-lg btn-ocean" href="#">Explora destinos</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="https://images.unsplash.com/photo-1560264280-88b68371db39?auto=format&fit=crop&w=1950&q=80"
+                    class="d-block w-100" alt="Entretenimiento a bordo">
+                    <div class="container">
+                        <div class="carousel-caption bg-dark bg-opacity-75">
+                            <h1>Lujo Flotante.</h1>
+                            <p>Disfruta de experiencias únicas: gastronomía gourmet, piscinas infinitas y espectáculos de
+                                primer nivel gracias a nuestra perfectos inteninerarios.</p>
+                            <p><a class="btn btn-lg btn-ocean" href="#">Vive la Experiencia</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="https://cdn.discordapp.com/attachments/741821454047248394/1363675630457327766/ChatGPT_Image_20_abr_2025_07_35_02_p.m..png?ex=6806e566&is=680593e6&hm=d1d6eba2ca5fa6ec960c84cde343946dfa74970a964e6f8e7d10a2c0d1144d1d&"
+                    class="d-block w-100" alt="Entretenimiento a bordo">
+                    <div class="container">
+                        <div class="carousel-caption bg-dark bg-opacity-75">
+                            <h1>Destinos de Ensueño</h1>
+                            <p>De las costas de Grecia a los glaciares de Alaska, el mundo te espera a bordo de TuCrucerito.</p>
+                            <p><a class="btn btn-lg btn-ocean" href="#">Reserva ahora</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+        <br>
+
+        <!--Div para el contenido de paquetes-->
+        <!---->
+        <div class="container paquetes">
+
+            <div class="p-5 mb-4 rounded-3 bg-danger">
+                <div class="container-fluid py-5">
+                    <h2 class="display-5 fw-bold">Filtros Avanzados</h2>
+                    <div class="row justify-content-center g-5">
+                        <div class="col-md-5 ">
+                            <label for="destino" class="form-label">Destino</label>
+                            <select class="form-select" id="destino" required>
+                                <option value="">Elige..</option>
+                                <option>United States</option>
+                            </select>
+                            <div class="invalid-Feedback">Seleccione un destino válido.</div>
+                        </div>
+                        <div class="col-md-5">
+                            <label for="cantperso" class="form-label">Cant. de Personas</label>
+                            <select class="form-select" id="cantperso" required>
+                                <option value="">Elige..</option>
+                                <option>California</option>
+                            </select>
+                            <div class="invalid-Feedback">Seleccione una cantidad válida.</div>
+                        </div>
+                        <div>
+                            <label for="money" class="form-label">Rango Dinero</label>
+                            <input type="range" class="form-range" min="0" max="20" step="1" id="customRange">
+                            <!--cambiospendientesnumdedineroycards-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!--Footer-->
+    <footer class="row row-cols-5 py-5 mt-5 p-2 border-top bg-header text-white">
+        <div class="col">
+            <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+                <svg class="bi me-2" width="40" height="32"><!--contenedorgrafico BootstrapIcons-->
+                    <use xlink:href="#bootstrap" /><!--ref icono predeterminado-->
+                </svg>
+            </a>
+            <p class="text-white">&copy;2025 TuCrucerito Corp.</p>
+        </div>
+
+        <div class="col">
+
+        </div>
+
+        <div class="col">
+            <h5>Info</h5>
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0 text-muted">Terminos y condiciones</a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0 text-muted">Más sobre nosotros</a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0 text-muted">Contáctanos</a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0 text-muted">FAQS</a>
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="col">
+            <h5>Redes Sociales</h5>
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2">
+                    <a href="https://www.instagram.com" class="nav-link p-0 text-muted">Instagram</a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a href="https://www.facebook.com" class="nav-link p-0 text-muted">Facebook</a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a href="x.com" class="nav-link p-0 text-muted">X</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>
