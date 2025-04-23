@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paquetes</title>
-    <link rel="stylesheet" href="scss/dist/custom.css">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="scss/dist/custom.css">
 
 </head>
 
@@ -47,9 +47,9 @@
         <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
-                    aria-label="Slide1"></button>
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide2"></button>
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide3"></button>
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -63,29 +63,28 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="carousel-item">
                     <img src="https://images.unsplash.com/photo-1560264280-88b68371db39?auto=format&fit=crop&w=1950&q=80"
                         class="d-block w-100" alt="Entretenimiento a bordo">
                     <div class="container">
                         <div class="carousel-caption bg-dark bg-opacity-75">
-                            <h1>Lujo Flotante.</h1>
+                            <h1>Lujo flotante.</h1>
                             <p>Disfruta de experiencias únicas: gastronomía gourmet, piscinas infinitas y espectáculos
                                 de
                                 primer nivel gracias a nuestra perfectos inteninerarios.</p>
-                            <p><a class="btn btn-lg btn-ocean" href="#">Vive la Experiencia</a></p>
+                            <p><a class="btn btn-lg btn-ocean" href="#">Vive la experiencia</a></p>
                         </div>
                     </div>
                 </div>
-
                 <div class="carousel-item">
-                    <img src="https://cdn.discordapp.com/attachments/741821454047248394/1363675630457327766/ChatGPT_Image_20_abr_2025_07_35_02_p.m..png?ex=6806e566&is=680593e6&hm=d1d6eba2ca5fa6ec960c84cde343946dfa74970a964e6f8e7d10a2c0d1144d1d&"
-                        class="d-block w-100" alt="Entretenimiento a bordo">
+                    <img src="https://cdn.discordapp.com/attachments/741821454047248394/1363675630457327766/ChatGPT_Image_20_abr_2025_07_35_02_p.m..png?ex=680a3126&is=6808dfa6&hm=12741dcb7514ac63b7f4a9b161c90e18ad488a911815518bca6b654baaca82f9&"
+                        class="d-block w-100" alt="Gran crucero navegando en aguas tranquilas">
                     <div class="container">
-                        <div class="carousel-caption bg-dark bg-opacity-75">
-                            <h1>Destinos de Ensueño</h1>
+                        <div class="carousel-caption bg-dark bg-opacity-75 ">
+                            <h1>Destinos de ensueño.</h1>
                             <p>De las costas de Grecia a los glaciares de Alaska, el mundo te espera a bordo de
-                                TuCrucerito.</p>
+                                TuCrucerito.
+                            </p>
                             <p><a class="btn btn-lg btn-ocean" href="#">Reserva ahora</a></p>
                         </div>
                     </div>
@@ -139,196 +138,184 @@
                             <label for="money" class="form-label">Rango Dinero</label><br><br>
                             <div class="slider-container">
                                 <span id="min-price" class="slider-value">0$</span>
-                                <input type="range" class="form-range" data-mdb-range-init data-slider-min="0" data-slider-max="20" step="1" 
-                                id="customRange">
+                                <input type="range" class="form-range" data-mdb-range-init data-slider-min="0"
+                                    data-slider-max="20" step="1" id="customRange">
                                 <span id="max-price" class="slider-value">36,000$</span>
                             </div>
-                            
+
                         </div>
                     </div>
                 </div>
-                
+
             </div>
             <div class="container px-4 py-5 rounded-2 bg-aquamarine" id="paquetescards">
                 <h2 class="pb-2 border-bottom">Paquetes</h2>
                 <div class="row row-cols-1 row-cols-lg-3 align-items-stretch
                 g-4 py-5">
                     <div class="col">
-                        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" 
-                        style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/RMS_Queen_Elizabeth_2_in_Trondheim_2008.jpg/1200px-RMS_Queen_Elizabeth_2_in_Trondheim_2008.jpg); background-size: cover;">
+                        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                            style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/RMS_Queen_Elizabeth_2_in_Trondheim_2008.jpg/1200px-RMS_Queen_Elizabeth_2_in_Trondheim_2008.jpg); background-size: cover;">
                             <div class="d-flex flex-column h-100 p-5 pb-3 text-dark text-shadow-1">
                                 <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Paquete nro1</h3>
                                 <ul class="d-flex list-unstyled mt-auto">
                                     <li class="me-auto">
-                                        <img  alt="" width="32" height="32" class="rounded-circle ">
+                                        <img alt="" width="32" height="32" class="rounded-circle ">
                                     </li>
-                                    
+
                                     <li class="d-flex align-items-center me-3">
-                                        <svg class="bi me-2" width="1em" height="1em" role="img" 
-                                        aria-label="Location">
-                                        <use xlink:href="#geo-fill"></use>
+                                        <svg class="bi me-2" width="1em" height="1em" role="img" aria-label="Location">
+                                            <use xlink:href="#geo-fill"></use>
                                         </svg>
                                         <small>Bahamas</small>
                                     </li>
                                     <li class="d-flex align-items-center">
-                                        <svg class="bi me-2" width="1em" height="1em" role="img" 
-                                        aria-label="Duration">
-                                        <use xlink:href="#calendar3"></use>
+                                        <svg class="bi me-2" width="1em" height="1em" role="img" aria-label="Duration">
+                                            <use xlink:href="#calendar3"></use>
                                         </svg>
                                         <small>14d</small>
                                     </li>
                                 </ul>
-                                
+
                             </div>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" 
-                        style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/RMS_Queen_Elizabeth_2_in_Trondheim_2008.jpg/1200px-RMS_Queen_Elizabeth_2_in_Trondheim_2008.jpg); background-size: cover;">
+                        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                            style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/RMS_Queen_Elizabeth_2_in_Trondheim_2008.jpg/1200px-RMS_Queen_Elizabeth_2_in_Trondheim_2008.jpg); background-size: cover;">
                             <div class="d-flex flex-column h-100 p-5 pb-3 text-dark text-shadow-1">
                                 <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Paquete nro1</h3>
                                 <ul class="d-flex list-unstyled mt-auto">
                                     <li class="me-auto">
-                                        <img  alt="" width="32" height="32" class="rounded-circle ">
+                                        <img alt="" width="32" height="32" class="rounded-circle ">
                                     </li>
-                                    
+
                                     <li class="d-flex align-items-center me-3">
-                                        <svg class="bi me-2" width="1em" height="1em" role="img" 
-                                        aria-label="Location">
-                                        <use xlink:href="#geo-fill"></use>
+                                        <svg class="bi me-2" width="1em" height="1em" role="img" aria-label="Location">
+                                            <use xlink:href="#geo-fill"></use>
                                         </svg>
                                         <small>Bahamas</small>
                                     </li>
                                     <li class="d-flex align-items-center">
-                                        <svg class="bi me-2" width="1em" height="1em" role="img" 
-                                        aria-label="Duration">
-                                        <use xlink:href="#calendar3"></use>
+                                        <svg class="bi me-2" width="1em" height="1em" role="img" aria-label="Duration">
+                                            <use xlink:href="#calendar3"></use>
                                         </svg>
                                         <small>14d</small>
                                     </li>
                                 </ul>
-                                
+
                             </div>
                         </div>
 
                     </div>
                     <div class="col">
-                        <div class="card card-cover h-100 overflow-hidden text-bg-dark " 
-                        style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/RMS_Queen_Elizabeth_2_in_Trondheim_2008.jpg/1200px-RMS_Queen_Elizabeth_2_in_Trondheim_2008.jpg); background-size: cover;">
+                        <div class="card card-cover h-100 overflow-hidden text-bg-dark "
+                            style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/RMS_Queen_Elizabeth_2_in_Trondheim_2008.jpg/1200px-RMS_Queen_Elizabeth_2_in_Trondheim_2008.jpg); background-size: cover;">
                             <div class="d-flex flex-column h-100 p-5 pb-3 text-dark text-shadow-1">
                                 <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Paquete nro1</h3>
                                 <ul class="d-flex list-unstyled mt-auto">
                                     <li class="me-auto">
-                                        <img  alt="" width="32" height="32" class="rounded-circle ">
+                                        <img alt="" width="32" height="32" class="rounded-circle ">
                                     </li>
-                                    
+
                                     <li class="d-flex align-items-center me-3">
-                                        <svg class="bi me-2" width="1em" height="1em" role="img" 
-                                        aria-label="Location">
-                                        <use xlink:href="#geo-fill"></use>
+                                        <svg class="bi me-2" width="1em" height="1em" role="img" aria-label="Location">
+                                            <use xlink:href="#geo-fill"></use>
                                         </svg>
                                         <small>Bahamas</small>
                                     </li>
                                     <li class="d-flex align-items-center">
-                                        <svg class="bi me-2" width="1em" height="1em" role="img" 
-                                        aria-label="Duration">
-                                        <use xlink:href="#calendar3"></use>
+                                        <svg class="bi me-2" width="1em" height="1em" role="img" aria-label="Duration">
+                                            <use xlink:href="#calendar3"></use>
                                         </svg>
                                         <small>14d</small>
                                     </li>
                                 </ul>
-                                
+
                             </div>
                         </div>
 
                     </div>
 
                     <div class="col">
-                        <div class="card card-cover h-100 overflow-hidden text-bg-dark " 
-                        style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/RMS_Queen_Elizabeth_2_in_Trondheim_2008.jpg/1200px-RMS_Queen_Elizabeth_2_in_Trondheim_2008.jpg); background-size: cover;">
+                        <div class="card card-cover h-100 overflow-hidden text-bg-dark "
+                            style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/RMS_Queen_Elizabeth_2_in_Trondheim_2008.jpg/1200px-RMS_Queen_Elizabeth_2_in_Trondheim_2008.jpg); background-size: cover;">
                             <div class="d-flex flex-column h-100 p-5 pb-3 text-dark text-shadow-1">
                                 <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Paquete nro1</h3>
                                 <ul class="d-flex list-unstyled mt-auto">
                                     <li class="me-auto">
-                                        <img  alt="" width="32" height="32" class="rounded-circle ">
+                                        <img alt="" width="32" height="32" class="rounded-circle ">
                                     </li>
-                                    
+
                                     <li class="d-flex align-items-center me-3">
-                                        <svg class="bi me-2" width="1em" height="1em" role="img" 
-                                        aria-label="Location">
-                                        <use xlink:href="#geo-fill"></use>
+                                        <svg class="bi me-2" width="1em" height="1em" role="img" aria-label="Location">
+                                            <use xlink:href="#geo-fill"></use>
                                         </svg>
                                         <small>Bahamas</small>
                                     </li>
                                     <li class="d-flex align-items-center">
-                                        <svg class="bi me-2" width="1em" height="1em" role="img" 
-                                        aria-label="Duration">
-                                        <use xlink:href="#calendar3"></use>
+                                        <svg class="bi me-2" width="1em" height="1em" role="img" aria-label="Duration">
+                                            <use xlink:href="#calendar3"></use>
                                         </svg>
                                         <small>14d</small>
                                     </li>
                                 </ul>
-                                
+
                             </div>
                         </div>
 
                     </div>
                     <div class="col">
-                        <div class="card card-cover h-100 overflow-hidden text-bg-dark " 
-                        style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/RMS_Queen_Elizabeth_2_in_Trondheim_2008.jpg/1200px-RMS_Queen_Elizabeth_2_in_Trondheim_2008.jpg); background-size: cover;">
+                        <div class="card card-cover h-100 overflow-hidden text-bg-dark "
+                            style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/RMS_Queen_Elizabeth_2_in_Trondheim_2008.jpg/1200px-RMS_Queen_Elizabeth_2_in_Trondheim_2008.jpg); background-size: cover;">
                             <div class="d-flex flex-column h-100 p-5 pb-3 text-dark text-shadow-1">
                                 <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Paquete nro1</h3>
                                 <ul class="d-flex list-unstyled mt-auto">
                                     <li class="me-auto">
-                                        <img  alt="" width="32" height="32" class="rounded-circle ">
+                                        <img alt="" width="32" height="32" class="rounded-circle ">
                                     </li>
-                                    
+
                                     <li class="d-flex align-items-center me-3">
-                                        <svg class="bi me-2" width="1em" height="1em" role="img" 
-                                        aria-label="Location">
-                                        <use xlink:href="#geo-fill"></use>
+                                        <svg class="bi me-2" width="1em" height="1em" role="img" aria-label="Location">
+                                            <use xlink:href="#geo-fill"></use>
                                         </svg>
                                         <small>Bahamas</small>
                                     </li>
                                     <li class="d-flex align-items-center">
-                                        <svg class="bi me-2" width="1em" height="1em" role="img" 
-                                        aria-label="Duration">
-                                        <use xlink:href="#calendar3"></use>
+                                        <svg class="bi me-2" width="1em" height="1em" role="img" aria-label="Duration">
+                                            <use xlink:href="#calendar3"></use>
                                         </svg>
                                         <small>14d</small>
                                     </li>
                                 </ul>
-                                
+
                             </div>
                         </div>
 
                     </div>
                     <div class="col">
-                        <div class="card card-cover h-100 overflow-hidden text-bg-dark " 
-                        style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/RMS_Queen_Elizabeth_2_in_Trondheim_2008.jpg/1200px-RMS_Queen_Elizabeth_2_in_Trondheim_2008.jpg); background-size: auto;">
+                        <div class="card card-cover h-100 overflow-hidden text-bg-dark "
+                            style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/RMS_Queen_Elizabeth_2_in_Trondheim_2008.jpg/1200px-RMS_Queen_Elizabeth_2_in_Trondheim_2008.jpg); background-size: auto;">
                             <div class="d-flex flex-column h-100 p-5 pb-3 text-dark text-shadow-1">
                                 <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Paquete nro1</h3>
                                 <ul class="d-flex list-unstyled mt-auto">
                                     <li class="me-auto">
-                                        <img  alt="" width="32" height="32" class="rounded-circle ">
+                                        <img alt="" width="32" height="32" class="rounded-circle ">
                                     </li>
-                                    
+
                                     <li class="d-flex align-items-center me-3">
-                                        <svg class="bi me-2" width="1em" height="1em" role="img" 
-                                        aria-label="Location">
-                                        <use xlink:href="#geo-fill"></use>
+                                        <svg class="bi me-2" width="1em" height="1em" role="img" aria-label="Location">
+                                            <use xlink:href="#geo-fill"></use>
                                         </svg>
                                         <small>Bahamas</small>
                                     </li>
                                     <li class="d-flex align-items-center">
-                                        <svg class="bi me-2" width="1em" height="1em" role="img" 
-                                        aria-label="Duration">
-                                        <use xlink:href="#calendar3"></use>
+                                        <svg class="bi me-2" width="1em" height="1em" role="img" aria-label="Duration">
+                                            <use xlink:href="#calendar3"></use>
                                         </svg>
                                         <small>14d</small>
                                     </li>
                                 </ul>
-                                
+
                             </div>
                         </div>
 
